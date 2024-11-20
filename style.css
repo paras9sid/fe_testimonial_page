@@ -24,10 +24,35 @@ html{
     "item4 item5 item5 item3";
     gap: 1.5rem;
 }
-.item{
-    font-size: 3rem;
+.items{
     border-radius: 5px;
     padding: 1.5rem;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 50px 1fr;
+    grid-template-areas: "image name" "title title" "description description";
+    row-gap: 1.5rem;
+
+}
+.items img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    grid-area: image;
+}
+.items .name{
+    font-size: 1.6rem;
+    grid-area: name;
+    align-self: center;
+    padding-left: 1rem;
+}
+.items .title{
+    font-size: 1.8rem;
+    grid-area: title;
+}
+.items .description{
+    font-size: 1.6rem;
+    grid-area: description;
 }
 .item1{
     background-color: #733fc7;
