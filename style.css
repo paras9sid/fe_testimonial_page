@@ -14,6 +14,10 @@ html{
     background-color: #ECF2F7;
     padding: 4rem 0;
 }
+.heading h1{
+    font-size: 3rem;
+    margin: 3rem;
+}
 .container{
     width: 95%;
     max-width: 1280px; /* restricting big monitors width size */
