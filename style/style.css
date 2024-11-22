@@ -84,6 +84,12 @@ html {
   content: '"';
 }
 
+.item5, .item4, .item3, .item2, .item1 {
+  padding: 1rem;
+  font-size: 15px;
+  border: 1px solid #181F2C;
+}
+
 .item1 {
   background: #733fc7 url("./media/quotation.png") top 10% right 20px/50px no-repeat;
   grid-area: item1;
