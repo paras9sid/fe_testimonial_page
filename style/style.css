@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("./utility.css");
 * {
   padding: 0;
   margin: 0;
@@ -9,6 +8,19 @@
 
 html {
   font-size: 10px;
+}
+
+.b-t {
+  color: #000000;
+}
+
+.w-t {
+  color: #ffffff;
+}
+
+.h-c { /* horizontal center*/
+  display: flex;
+  justify-content: center;
 }
 
 .testimonials {
@@ -95,4 +107,32 @@ html {
 .item5 {
   background-color: #181F2C;
   grid-area: item5;
+}
+
+footer .logo {
+  margin: 20px 0 20px 0;
+}
+footer .logo h1 {
+  font-size: 15px;
+  text-align: center;
+}
+
+/* for IPADS */
+@media (max-width: 991px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "item1 item1 item2" "item4 item5 item5" "item3 item3 item3";
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "item1" "item2" "item3" "item4" "item5";
+    gap: 1.5rem;
+  }
 }
