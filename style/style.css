@@ -84,35 +84,45 @@ html {
   content: '"';
 }
 
-.item5, .item4, .item3, .item2, .item1 {
+.item1 {
+  background: url("./media/quotation.png") top 10% right 20px/50px no-repeat;
+  grid-area: item1;
   padding: 1rem;
   font-size: 15px;
   border: 1px solid #181F2C;
-}
-
-.item1 {
-  background: #733fc7 url("./media/quotation.png") top 10% right 20px/50px no-repeat;
-  grid-area: item1;
+  background: #733fc7;
 }
 
 .item2 {
-  background-color: #49556c;
   grid-area: item2;
+  padding: 1rem;
+  font-size: 15px;
+  border: 1px solid #181F2C;
+  background: #49556c;
 }
 
 .item3 {
-  background-color: #FEFEFE;
   grid-area: item3;
+  padding: 1rem;
+  font-size: 15px;
+  border: 1px solid #181F2C;
+  background: #fefefe;
 }
 
 .item4 {
-  background-color: #FEFEFE;
   grid-area: item4;
+  padding: 1rem;
+  font-size: 15px;
+  border: 1px solid #181F2C;
+  background: #fefefe;
 }
 
 .item5 {
-  background-color: #181F2C;
   grid-area: item5;
+  padding: 1rem;
+  font-size: 15px;
+  border: 1px solid #181F2C;
+  background: #181f2c;
 }
 
 footer .logo {

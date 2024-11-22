@@ -41,7 +41,10 @@
         grid-area: name;
         align-self: center;
         padding-left: 1rem;
-        font-weight: 600;
+        // font-weight: 600;
+
+        // operators
+        font-weight: 500 + 100;
     }
     .title{
         font-size: 1.8rem;
@@ -62,36 +65,35 @@
     }
 }
 
-
-// inheritance/extend
-%item-properties{
+// mixins
+@mixin item-properties($color, $fs: 15px){
     padding: 1rem;
-    font-size: 15px;
+    font-size: $fs;
     border: 1px solid #181F2C;
+    background: $color;
 }
 
 .item1{
-    background: #733fc7 url('./media/quotation.png') top 10% right 20px / 50px no-repeat;
+    background: url('./media/quotation.png') top 10% right 20px / 50px no-repeat;
     grid-area: item1;
-    @extend %item-properties;
+    @include item-properties($color: #733fc7);
 }
 .item2{
-    background-color: #49556c;
     grid-area: item2;
-    @extend %item-properties;
+    @include item-properties($color: #49556c);
 }
 .item3{
-    background-color: #FEFEFE;
     grid-area: item3;
-    @extend %item-properties;
+    @include item-properties($color: #fefefe);
+
 }
 .item4{
-    background-color: #FEFEFE;
     grid-area: item4;
-    @extend %item-properties;
+    @include item-properties($color: #fefefe);
+
 }
 .item5{
-    background-color: #181F2C;
     grid-area: item5;
-    @extend %item-properties;
+    @include item-properties($color: #181f2c);
+
 }
